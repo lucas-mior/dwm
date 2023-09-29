@@ -2262,6 +2262,10 @@ tagmon(const Arg *arg)
 		selmon->sel->y += mon->my - selmon->my;
 	}
 	sendmon(selmon->sel, mon);
+	usleep(50);
+	focus(NULL);
+	usleep(50);
+	focusmon(arg);
 }
 
 void
