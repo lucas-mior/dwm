@@ -2271,6 +2271,8 @@ tagmon(const Arg *arg)
 	focus(NULL);
 	usleep(50);
 	focusmon(arg);
+	togglefloating(NULL);
+	togglefloating(NULL);
 }
 
 void
