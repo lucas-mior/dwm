@@ -2203,8 +2203,8 @@ setup(void)
 	focus(NULL);
 	Arg lay_monocle = {.v = &layouts[2]};
 	Arg lay_grid = {.v = &layouts[3]};
-	Arg tag8 = {.ui = 1 << 8};
-	Arg tag1 = {.ui = 1 << 1};
+	Arg tag8 = {.ui = 1 << 5};
+	Arg tag1 = {.ui = 1 << 0};
 	Arg tag0 = {.ui = ~0};
 	view(&tag8);
 	setlayout(&lay_monocle);
